@@ -1,0 +1,145 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jo\~ao Victor Barreto Alves} \\ \vspace{1pt}
+    \small +55 81 99536-3894 $|$ \href{mailto:joaovictor1c2013@gmail.com}{\underline{joaovictor1c2013@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/joao-alves1024}} $|$
+    \href{https://github.com/joaovictor1c}{\underline{github.com/joaovictor1c}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UNINASSAU}{Olinda, PE}
+      {Bachelor's Degree in Information Systems}{Jun. 2019 -- May 2024}
+    \resumeSubheading
+      {ETE C\'icero Dias}{Recife, PE}
+      {Technical Course in Digital Game Programming}{2013 -- 2015}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Matera}{2022 -- Present}
+      {Systems Analyst}{Campinas, SP}
+      \resumeItemListStart
+        \resumeItem{Designed and developed Java-based microservices using Kafka and Helm to support high-volume financial transactions.}
+        \resumeItem{Implemented distributed tracing with OpenTelemetry across microservices, enhancing observability and reducing incident resolution time.}
+        \resumeItem{Optimized investment profitability calculations by applying query best practices, improving processing time and user experience.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Accenture Brazil}{2020 -- 2022}
+      {Software Engineering Analyst}{Recife - PE}
+      \resumeItemListStart
+        \resumeItem{Participated in all phases of an auto-financing project from design to post-production support.}
+        \resumeItem{Developed BPMN workflows using Camunda integrated via microservices to automate loan processing.}
+        \resumeItem{Created RESTful APIs with Spring Boot and integrated them with Kafka, improving system reliability and external connectivity.}
+        \resumeItem{Provided post-production support including bug fixes and hotfix deployments, improving client satisfaction.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SRI Automation}{2019 -- 2020}
+      {Web Development Intern}{Recife - PE}
+      \resumeItemListStart
+        \resumeItem{Maintained and enhanced a React-based POS application, fixing bugs and improving UI components for better usability and reliability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Java, Javascript, Go (learning)} \\
+     \textbf{Frameworks \& Architecture}{: Spring Boot, Node, React, Camunda, Microservices, BPMN, REST APIs, GraphQL} \\
+     \textbf{Messaging \& Event Streaming}{: Kafka, RabbitMQ, AWS SNS, AWS SQS} \\
+     \textbf{Observability \& Monitoring}{: OpenTelemetry, Micrometer} \\
+     \textbf{Databases}{: PostgreSQL, DynamoDB, MySQL, Oracle, SQL Server} \\
+     \textbf{Infrastructure \& DevOps}{: Docker, Helm, Kubernetes, Git, GitHub Actions, Jenkins} \\
+     \textbf{Performance Testing}{: K6, Jmeter}
+    }}
+ \end{itemize}
+
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}: Intermediate (B1/B2) — Comfortable with professional communication} \\
+     \textbf{Spanish}: Basic to intermediate level}
+    }}
+ \end{itemize}
+
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf {AWS Certified Cloud Practitioner} \\
+     \textbf {EF SET English Certificate} — 55/100 (B2 Upper Intermediate)
+    }}
+ \end{itemize}
+
+\end{document}
