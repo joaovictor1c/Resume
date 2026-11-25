@@ -60,85 +60,96 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
+%----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Jo\~ao Victor Barreto Alves} \\ \vspace{1pt}
-    \small +55 81 99536-3894 $|$ \href{mailto:joaovictor1c2013@gmail.com}{\underline{joaovictor1c2013@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/joao-alves1024}} $|$
-    \href{https://github.com/joaovictor1c}{\underline{github.com/joaovictor1c}}
+    \small Barcelona, Spain $|$ +55 81 99536-3894 $|$ \href{mailto:joaovictor1c2013@gmail.com}{\underline{joaovictor1c2013@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/joao-alves1024}{\underline{linkedin.com/in/joao-alves1024}}
 \end{center}
 
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {UNINASSAU}{Olinda, PE}
-      {Bachelor's Degree in Information Systems}{Jun. 2019 -- May 2024}
-    \resumeSubheading
-      {ETE C\'icero Dias}{Recife, PE}
-      {Technical Course in Digital Game Programming}{2013 -- 2015}
-  \resumeSubHeadingListEnd
+%----------SUMMARY----------
+\section{Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Backend Software Engineer with 6 years of experience building large-scale systems for banking, payments and insurance,
+     specialized in Java, Spring Boot, Kafka, microservices, event-driven architecture, Hexagonal Architecture and DDD.
+    }}
+ \end{itemize}
 
+%----------EXPERIENCE----------
 \section{Experience}
   \resumeSubHeadingListStart
+
     \resumeSubheading
-      {Matera}{2022 -- Present}
-      {Systems Analyst}{Campinas, SP}
+      {adesso Spain}{2026 -- Present}
+      {Software Engineer}{Barcelona, Spain}
       \resumeItemListStart
-        \resumeItem{Designed and developed Java-based microservices using Kafka and Helm to support high-volume financial transactions.}
-        \resumeItem{Implemented distributed tracing with OpenTelemetry across microservices, enhancing observability and reducing incident resolution time.}
-        \resumeItem{Optimized investment profitability calculations by applying query best practices, improving processing time and user experience.}
+        \resumeItem{Develop and evolve a customer-facing integration and caching service with Spring Boot and Redis for the digital platform of a leading global insurance group, orchestrating calls between client applications and multiple core insurance systems while reducing latency and protecting downstream services from excess load.}
+        \resumeItem{Implement reliable event-driven messaging on Kafka using the Transactional Outbox and Inbox patterns with background workers, ensuring no message loss and idempotent processing across microservices.}
+        \resumeItem{Apply AI-assisted engineering with Claude Code connected through MCP to Dynatrace and Jira, investigating production issues directly from telemetry, turning tickets into technical plans and accelerating delivery.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Matera}{2022 -- 2026}
+      {Software Developer}{Campinas, SP, Brazil (Remote)}
+      \resumeItemListStart
+        \resumeItem{Designed and developed Java and Spring Boot microservices with Kafka for a core banking and instant payments (Pix) provider, processing an average of 2 million financial transactions per day.}
+        \resumeItem{Implemented distributed tracing with OpenTelemetry to identify performance bottlenecks across microservices, reducing analysis time by 30\%.}
+        \resumeItem{Optimized investment profitability calculations through SQL tuning, cutting processing time from 1s to 700ms.}
+        \resumeItem{Deployed services on Kubernetes with Helm on AWS, applying Hexagonal Architecture, DDD and the C4 Model.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Accenture Brazil}{2020 -- 2022}
-      {Software Engineering Analyst}{Recife - PE}
+      {Software Engineering Analyst}{Recife, PE, Brazil}
       \resumeItemListStart
-        \resumeItem{Participated in all phases of an auto-financing project from design to post-production support.}
-        \resumeItem{Developed BPMN workflows using Camunda integrated via microservices to automate loan processing.}
-        \resumeItem{Created RESTful APIs with Spring Boot and integrated them with Kafka, improving system reliability and external connectivity.}
-        \resumeItem{Provided post-production support including bug fixes and hotfix deployments, improving client satisfaction.}
+        \resumeItem{Designed and implemented loan approval workflows with BPMN and Camunda for an auto-financing platform, orchestrated through Spring Boot microservices, from initial design to production.}
+        \resumeItem{Built and maintained REST APIs with Java and Spring Boot, integrating internal and external systems through Kafka for reliable asynchronous communication.}
+        \resumeItem{Handled production support with the client, performing root-cause analysis, delivering hotfixes and creating documented workarounds that reduced the duration of recurring incidents.}
       \resumeItemListEnd
 
     \resumeSubheading
       {SRI Automation}{2019 -- 2020}
-      {Web Development Intern}{Recife - PE}
+      {Web Development Intern}{Recife, PE, Brazil}
       \resumeItemListStart
-        \resumeItem{Maintained and enhanced a React-based POS application, fixing bugs and improving UI components for better usability and reliability.}
+        \resumeItem{Maintained and enhanced a React-based point-of-sale (POS) application.}
       \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
+%----------TECHNICAL SKILLS----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Java, Javascript, Go (learning)} \\
-     \textbf{Frameworks \& Architecture}{: Spring Boot, Node, React, Camunda, Microservices, BPMN, REST APIs, GraphQL} \\
-     \textbf{Messaging \& Event Streaming}{: Kafka, RabbitMQ, AWS SNS, AWS SQS} \\
-     \textbf{Observability \& Monitoring}{: OpenTelemetry, Micrometer} \\
-     \textbf{Databases}{: PostgreSQL, DynamoDB, MySQL, Oracle, SQL Server} \\
-     \textbf{Infrastructure \& DevOps}{: Docker, Helm, Kubernetes, Git, GitHub Actions, Jenkins} \\
-     \textbf{Performance Testing}{: K6, Jmeter}
+     \textbf{Languages \& Frameworks}{: Java, SQL, JavaScript, Spring Boot, Spring Data JPA, Hibernate, Camunda, React} \\
+     \textbf{Architecture}{: Microservices, Hexagonal Architecture, DDD, Event-Driven, Outbox/Inbox, REST APIs, C4 Model} \\
+     \textbf{Messaging \& Data}{: Kafka, RabbitMQ, AWS SNS/SQS, PostgreSQL, Oracle, MySQL, SQL Server, DynamoDB, Redis} \\
+     \textbf{Cloud \& Observability}{: AWS, Docker, Kubernetes, Helm, GitHub Actions, Jenkins, Dynatrace, OpenTelemetry} \\
+     \textbf{Testing \& AI}{: Unit and Integration Testing, K6, JMeter, Claude Code, MCP}
     }}
  \end{itemize}
 
-\section{Languages}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{English}: {Intermediate (B1/B2) — Comfortable with professional communication} \\
-     \textbf{Spanish}: {Basic to intermediate level}
-    }}
- \end{itemize} 
+%----------EDUCATION----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UNINASSAU}{Olinda, PE, Brazil}
+      {Bachelor's Degree in Information Systems}{Jun. 2019 -- May 2023}
+  \resumeSubHeadingListEnd
 
-\section{Certifications}
+%----------CERTIFICATIONS & LANGUAGES----------
+\section{Certifications \& Languages}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf {AWS Certified Cloud Practitioner} \\
-     \textbf {EF SET English Certificate} — 55/100 (B2 Upper Intermediate)
+     \textbf{Certifications}: AWS Certified Cloud Practitioner; EF SET English Certificate (B2 Upper Intermediate) \\
+     \textbf{Languages}: Portuguese (Native), English (B2, professional working proficiency), Spanish (Intermediate)
     }}
  \end{itemize}
 
